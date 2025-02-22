@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+
+    /* There are 3 types of conditional statement
+    1. if statement
+    2. if else statement
+    3. if else if else statement
+    */
+
+ let a;
+    do {
+         a = prompt("hey whats your age!!");
+
+        console.log(a);// the value of a will be string
+        a = Number.parseInt(a);  // converting the string into number
+        console.log(typeof a);  // now the value of a will be number
+        if (isNaN(a) || a <= 0){
+            alert("your input is invalid!!");
+        }
+} while (isNaN(a) || a <= 0);
+
+
+//**** USING IF ELSE CONDITION************
+ /*   
+if (a > 0 && a <= 18) {
+        alert("you are under age");
+    }
+    else if (a > 18 && a <= 30) {
+        alert("you are young");
+
+    }
+    else if (a > 30) {
+        alert(" you are a man")
+    }
+
+    else {
+
+        alert("your input age is invalid");
+
+    }
+*/
+
+    ///***** using this same program switch statement****
+
+   switch (true) {
+    case (a > 0 && a <= 18):
+        alert("you are under age")
+        break;
+    case (a > 18 && a <= 30):
+        alert("you are young")
+        break;
+    case (a > 30):
+        alert("you are a man!")
+        break;
+   
+    default:
+        alert("your input age is invalid!!")
+        break;
+   }
+ 
+
+
+
+
+
+
+
+</script>
+
+</html>
