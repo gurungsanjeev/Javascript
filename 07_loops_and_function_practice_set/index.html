@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <h1>Practice set of loop and functions</h1>
+</head>
+<body>
+    
+</body>
+<script>
+
+    let obj ={
+        harry: 90,
+        sanjeev : 80,
+        bikash: 80,
+        srijana: 40,
+        sandip: 50,
+        bikash1: 80,
+        srijana2: 40,
+        sandip2: 50
+    }
+
+// problem 
+    for(let a in obj){
+        console.log(" The marks of " + a + " are " + obj[a]);
+    }
+
+
+
+    /// qno 2:  ask the user to input the number until and unless they give numbe 4
+
+    let cn = 4;
+    let i;
+    while(i!=4){
+         i = prompt("enter any number");
+         if(i!=4){
+
+             alert("Try Again...")
+         }
+        i = Number.parseInt(i);
+
+    }
+    alert("Hurrey!!!, you enter the number 4");
+
+</script>
+</html>
