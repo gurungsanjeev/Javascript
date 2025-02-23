@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Strings Methods</h1>
+    
+    
+</body>
+<script>
+    let name = "sanjeev"
+   upper = name.toUpperCase();
+   lower = name.toLowerCase();
+   slice = name.slice(2,4)
+   slice2 = name.slice(2)
+    console.log(upper); /// SANJEEV
+    console.log(name); /// sanjeev
+    console.log(slice)
+    console.log(slice2); // njeev
+
+    name = name.replace("sanjeev", "Sandesh");
+    console.log(name);
+
+//// concat methods
+    let name1 = "sanjeev"
+    let name2 = "Sandesh"
+    let name3 = name1.concat(name2);
+    console.log(name3)
+
+
+/// trim methods
+let brands = " Ni  ke   ";
+brands = brands.trim(); // this will help to remove the staart and end  white spaces only!!
+console.log(brands);
+brands = brands.trim().replace(/\s+/g,''); // this will help to remove the staart and end  white spaces along with betweeen letters !!
+console.log(brands);
+
+
+
+/// print the string 
+let frn = "statements"
+for(let i = 0; i<frn.length; i++){
+    console.log(frn[i]);
+}
+
+</script>
+</html>

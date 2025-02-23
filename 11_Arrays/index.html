@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Array are variable which can hold more than one value</h3>
+
+</body>
+<script>
+    const arr = ["sanjeev", 9, false];
+    arr[1] = "sandesh"; /// changing the value of the array
+    // for(let i = 0; i<arr.length; i++){
+    //     console.log(arr[i]);
+    // }
+    // console.log(typeof arr)
+
+    for (a of arr) {
+        console.log(a);
+    }
+
+   /********************* Methods of the araay************************/
+let num = [1,2,3,4,5,6,67];
+let b = num.toString();
+console.log(b);
+console.log(typeof b);
+/// joining the "_" in the arrays
+let c = num.join("+")   
+let d = num.join("_")   
+console.log(c);//// output : 1+2+3+4+5+6+67
+console.log(d);//// output : 1_2_3_4_5_6_67
+console.log(typeof c);
+console.log(typeof d);
+
+
+
+
+////////   pop() Method -> this will removes the last elements from the array
+
+
+let name = [ "sanjeev", "ram", "shyam", "hari"];
+r = name.pop(); /// it will update the arrays
+console.log(name , r)
+
+
+
+
+/// push() method -> this will add the elements inside the array
+
+
+add = name.push("sandesh");   /// this will add to the array
+console.log(name);
+
+/// shift() method  -> this will removes the  first elements and return it
+
+shift = name.shift(2);
+console.log(name)
+
+
+
+/// unshift() method  -> this add to the  first elements in the array
+
+
+unshift = name.unshift("Sita");
+console.log(name)
+
+
+
+/// sort()  -> this will sort the items inside the array in the ascending order
+let arr1 = ["sanjeev", "ram", "bibek"]
+
+asc = arr1.sort();
+console.log(arr1);
+
+
+
+/// slice()   -> methods
+
+let arr2 = ["orange", "lemon", "apple", "kathmandu", 5];
+sl = arr2.slice(2,4);
+console.log(sl);
+
+
+</script>
+
+</html>

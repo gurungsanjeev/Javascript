@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const sentence = "The quick brown fox jumps over the lazy dogs";
+    const word = 'cat'
+    console.log(`the word "${word}" ${sentence.includes(word)?"is":"is not "} in the sentences"} `)
+
+
+
+    // qn1
+// extract the amount out of this string: "please give me RS 2000"
+
+
+let str = "please give me Rs 2000"
+let amount = str.slice("please give me Rs".length);
+// let amount = str.slice(17); /// this is an alternative 
+amount= Number.parseInt(amount);
+console.log(amount);
+
+
+
+</script>
+</html>
