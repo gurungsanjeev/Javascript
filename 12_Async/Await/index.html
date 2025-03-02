@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Async/Await </h1>
+</body>
+<script>
+  /* Async / await function*/
+
+  async function weather() {
+
+    let ktmWeather = new Promise((resolve, reject) => {
+      setInterval(() => {
+        resolve(" ktm weather is 27 Degreee")
+      }, 5000)
+    })
+
+    let bktWeather = new Promise((resolve, reject) => {
+      setInterval(() => {
+        resolve("bkt weather is 27 Degreee")
+      }, 1000)
+    })
+    setTimeout(() => {
+      
+    }, );
+
+
+    let ktmW = await ktmWeather
+    let bktW = await bktWeather
+    return [ ktmW, bktW]
+    // console.log (ktmW)
+    // console.log (bktW)
+    
+
+
+
+
+  }
+  console.log("welcome to the weather control room!!")
+ let a = weather()
+console.log(a);
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>
